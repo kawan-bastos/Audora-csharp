@@ -1,7 +1,7 @@
-﻿using ScreenSound.Modelos;
+﻿using Audora.Modelos;
 using System.Globalization;
 
-namespace ScreenSound.Menu;
+namespace Audora.Menu;
 
 internal class MenuAvaliarAlbum : Menu
 {

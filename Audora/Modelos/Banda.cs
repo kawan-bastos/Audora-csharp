@@ -1,4 +1,4 @@
-﻿namespace ScreenSound.Modelos;
+﻿namespace Audora.Modelos;
 
 internal class Banda : IAvaliavel
 {
@@ -9,8 +9,8 @@ internal class Banda : IAvaliavel
     {
         Nome = nome;
     }
-
-    public string Nome { get; }
+    
+    public string Nome { get;  }
     public double Media 
     {
         get

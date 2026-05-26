@@ -1,4 +1,4 @@
-﻿namespace ScreenSound.Modelos;
+﻿namespace Audora.Modelos;
 
 internal interface IAvaliavel
 {

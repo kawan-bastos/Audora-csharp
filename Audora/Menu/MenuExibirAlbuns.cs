@@ -1,6 +1,6 @@
-﻿using ScreenSound.Modelos;
+﻿using Audora.Modelos;
 
-namespace ScreenSound.Menu;
+namespace Audora.Menu;
 
 internal class MenuExibirAlbuns : Menu
 {

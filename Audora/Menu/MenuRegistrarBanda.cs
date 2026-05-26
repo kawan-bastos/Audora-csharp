@@ -1,7 +1,7 @@
-﻿using ScreenSound.Modelos;
+﻿using Audora.Modelos;
 using System.Globalization;
 
-namespace ScreenSound.Menu;
+namespace Audora.Menu;
 
 internal class MenuRegistrarBanda : Menu
 {
@@ -37,7 +37,7 @@ internal class MenuRegistrarBanda : Menu
                 MensagemDeRetornoAoMenu();
                 return;
             }
-            
+
             if (registroDeBandas.ContainsKey(nomeDaBanda))
             {
                 Console.WriteLine("\nOpção inválida! Banda já existente. Tente novamente.");
@@ -73,4 +73,4 @@ internal class MenuRegistrarBanda : Menu
 
 
     }
-}
+};

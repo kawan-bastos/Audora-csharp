@@ -1,7 +1,7 @@
-﻿using ScreenSound.Modelos;
+﻿using Audora.Modelos;
 using System.Globalization;
 
-namespace ScreenSound.Menu;
+namespace Audora.Menu;
 internal class MenuExibirDetalhes : Menu
 {
    public override void Executar(Dictionary<string, Banda> registroDeBandas, Dictionary<int, Menu> menus)

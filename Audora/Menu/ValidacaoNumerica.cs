@@ -1,4 +1,4 @@
-﻿namespace ScreenSound.Menu;
+﻿namespace Audora.Menu;
 
 internal class ValidacaoNumerica 
 {

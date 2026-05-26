@@ -1,6 +1,6 @@
-﻿using ScreenSound.Modelos;
+﻿using Audora.Modelos;
 
-namespace ScreenSound.Menu;
+namespace Audora.Menu;
 
 internal class MenuPrincipal : Menu
 {
@@ -37,7 +37,7 @@ internal class MenuPrincipal : Menu
             } 
             else if (opcaoEscolhidaNumerica == 0)
             {
-                Console.WriteLine("Obrigado por usar o ScreenSound!");
+                Console.WriteLine("Obrigado por usar o Audora!");
                 Thread.Sleep(1500);
                 break;
             }

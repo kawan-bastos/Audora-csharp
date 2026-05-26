@@ -1,5 +1,5 @@
 ﻿
-namespace ScreenSound.Modelos;
+namespace Audora.Modelos;
 
 internal class Avaliacao
 {
