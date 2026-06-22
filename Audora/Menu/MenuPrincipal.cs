@@ -4,17 +4,17 @@ namespace Audora.Menu;
 
 internal class MenuPrincipal : Menu
 {
-   public override void Executar(Dictionary<string, Banda> registroDeBandas, Dictionary<int, Menu> menus)
+   public override async Task Executar(Dictionary<string, Banda> registroDeBandas, Dictionary<int, Menu> menus)
     {
         int opcaoEscolhidaNumerica;
         string opcaoEscolhida;
         do
         {
-            base.Executar(registroDeBandas, menus);
+            await base.Executar(registroDeBandas, menus);
             ExibirLogo(); 
             Console.WriteLine("--------------------------------");
-            Console.WriteLine("Digite 1 para Registrar uma banda");
-            Console.WriteLine("Digite 2 para Mostrar todas as bandas");
+            Console.WriteLine("Digite 1 para Registrar uma Banda");
+            Console.WriteLine("Digite 2 para Pesquisar uma Banda");
             Console.WriteLine("Digite 3 para Registrar um Album a Banda");
             Console.WriteLine("Digite 4 para Avaliar uma banda");
             Console.WriteLine("Digite 5 para Avaliar um álbum");
@@ -33,7 +33,7 @@ internal class MenuPrincipal : Menu
             if (menus.ContainsKey(opcaoEscolhidaNumerica))
             {
                 Menu menuOpcaoEscolhida = menus[opcaoEscolhidaNumerica];
-                menuOpcaoEscolhida.Executar(registroDeBandas, menus);
+               await menuOpcaoEscolhida.Executar(registroDeBandas, menus);
             } 
             else if (opcaoEscolhidaNumerica == 0)
             {

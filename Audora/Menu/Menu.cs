@@ -30,7 +30,7 @@ internal abstract class Menu
         return;
     }
 
-    public virtual void Executar(Dictionary<string, Banda> registroDeBandas, Dictionary<int, Menu> menus)
+    public virtual async Task Executar(Dictionary<string, Banda> registroDeBandas, Dictionary<int, Menu> menus)
     {
         Console.Clear();
     }

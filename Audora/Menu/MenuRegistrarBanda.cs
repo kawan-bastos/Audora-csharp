@@ -5,12 +5,12 @@ namespace Audora.Menu;
 
 internal class MenuRegistrarBanda : Menu
 {
-    public override void Executar(Dictionary<string, Banda> registroDeBandas, Dictionary<int, Menu> menus)
+    public override async Task Executar(Dictionary<string, Banda> registroDeBandas, Dictionary<int, Menu> menus)
     {
         string nomeDaBanda;
         do
         {
-            base.Executar(registroDeBandas, menus);
+            await base.Executar(registroDeBandas, menus);
             Console.WriteLine(@"
 ██████╗░███████╗░██████╗░██╗░██████╗████████╗██████╗░░█████╗░██████╗░
 ██╔══██╗██╔════╝██╔════╝░██║██╔════╝╚══██╔══╝██╔══██╗██╔══██╗██╔══██╗
